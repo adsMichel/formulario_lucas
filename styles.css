@@ -11,7 +11,8 @@ h3 {
 
 .login {
     display: flex;
-    width: 80vw;
+    width: 100vw;
+    height: 100vh;
     margin: 0 auto;
     padding: 10px;
 }
@@ -53,4 +54,33 @@ button {
     font-size: .7rem;
     border: none;
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 764px) {
+    h3 {
+        margin: 0 auto;
+    }
+    .login {
+        display: block;
+        width: 100%;
+    }
+    .login_img {
+        /* display: none; */
+        width: 100%;
+    }
+
+    .login_form {
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        top: 35%;
+        background: none;
+    }
+    input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
 }
