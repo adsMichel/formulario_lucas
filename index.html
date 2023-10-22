@@ -30,10 +30,11 @@
         let nome = document.getElementById("id_nome").value;
         let senha = document.getElementById("id_senha").value;
         let resultado;
-        if (nome != senha) {
-          resultado = "Login com sucesso.";
+
+        if (nome == senha || nome == "" || senha == "") {
+          resultado = "Falha no login.";
         } else {
-          resultado = "Senha igual nome.";
+          resultado = "Login com sucesso.";
         }
         alert(resultado);
       }
