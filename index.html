@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Lucas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="login">
+        <div class="login_img">
+          <img src="assets/images/leaves-border.jpg" alt="" />
+        </div>
+        <div class="login_form">
+          <h3>Login to continue</h3>
+          <form action="">
+            <label for="id_nome">Nome</label><br />
+            <input type="text" id="id_nome" /><br />
+            <label for="id_senha">Senha</label><br />
+            <input type="password" id="id_senha" /><br />
+            <button onclick="check()">login</button>
+          </form>
+          <p id="result"></p>
+        </div>
+      </div>
+    </main>
+    <script>
+      function check() {
+        let nome = document.getElementById("id_nome").value;
+        let senha = document.getElementById("id_senha").value;
+        let resultado;
+        if (nome != senha) {
+          resultado = "Login com sucesso.";
+        } else {
+          resultado = "Senha igual nome.";
+        }
+        alert(resultado);
+      }
+    </script>
+  </body>
+</html>
